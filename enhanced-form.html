@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorter Form & Content</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 600px; margin: 2em auto; padding: 0 1em; }
+        section, form { background: #f4f4f4; padding: 1.5em; margin-bottom: 1.5em; border-radius: 8px; }
+        img, video, audio { max-width: 100%; height: auto; display: block; margin: 1em 0; }
+        table { width: 100%; border-collapse: collapse; margin-top: 1em; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #ecf0f1; }
+        fieldset { border: 1px solid #ccc; border-radius: 4px; padding: 1em; margin-bottom: 1em; }
+        legend { font-weight: bold; }
+        label { display: block; margin-bottom: 0.5em; font-weight: bold; }
+        input:not([type="radio"]):not([type="checkbox"]), select, textarea { width: 100%; padding: 8px; box-sizing: border-box; }
+        button { background-color: #3498db; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Enhanced Form & Content</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Content Showcase</h2>
+            <h3>Important Points</h3>
+            <ul>
+                <li><strong>HTML5 lists</strong> for clarity.</li>
+                <li><strong>Tables</strong> for structured data.</li>
+                <li><strong>Media elements</strong> like images and video.</li>
+            </ul>
+
+            <table>
+                <caption>Product Data</caption>
+                <thead>
+                    <tr><th>Feature</th><th>Value</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Weight</td><td>1.2 kg</td></tr>
+                    <tr><td>Battery</td><td>12 hours</td></tr>
+                </tbody>
+            </table>
+            
+            <img src="https://via.placeholder.com/400x200.png?text=Placeholder+Image" alt="A generic placeholder image.">
+
+            <video controls width="400">
+                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section>
+            <h2>Contact Form</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>User Information</legend>
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="full_name" required placeholder="Your Full Name" autocomplete="name">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email_address" required autocomplete="email">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" minlength="8" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms" required> I agree to the terms.
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="newsletter" value="yes" required> Subscribe to Newsletter
+                    </label>
+                    <label>
+                        <input type="radio" name="newsletter" value="no"> Do not subscribe
+                    </label>
+                </fieldset>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+    </main>
+
+</body>
+</html>
